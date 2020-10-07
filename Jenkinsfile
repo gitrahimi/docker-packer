@@ -20,7 +20,7 @@ else {
     error("Branch name didn't match RegEx")
 }
 
-node {
+node("packer") {
     stage('Pull Repo') {
         git 'https://github.com/ikambarov/packer.git'
     }
